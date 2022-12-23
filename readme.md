@@ -15,16 +15,27 @@ This demo shows an example of using SAME for SSVEP-BCIs. The state-of-the-art al
 ##  The main steps of SAME
 
 1. SSVEP template averaged across trials is initially obtained.
-   
-   ![image-20221223205826207](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20221223205826207.png)
-   
+   $$
+   \overline{\boldsymbol{X}}_{n}=\frac{1}{N_t} \sum_{j=1}^{N_t} \boldsymbol{X}_{n}^{(j)}
+   $$
+
 2. The estimated source signal is reconstructed by estimating the aliasing matrix of sine-cosine signal.
-   
-   ![image-20221223205926217](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20221223205926217.png)
-   
+   $$
+   \begin{aligned}
+   & \widehat{\boldsymbol{\Phi}}={\operatorname { a r g } \operatorname { m i n }}\left\|\overline{\boldsymbol{X}}_{n}-\boldsymbol{\Phi} Y_{n}\right\|_F^2
+   \end{aligned}
+   $$
+
+   $$
+   \begin{aligned}
+   & \widehat{\boldsymbol{S}}_{n, m}=\widehat{\boldsymbol{\Phi}} Y_{n, m}
+   \end{aligned}
+   $$
+
 3. Random noise is added to obtain multiple artificial generated signals.
-   
-   ![image-20221223205958320](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20221223205958320.png)
+   $$
+   \boldsymbol{Z}_{n}^{(k)}=\hat{\boldsymbol{S}}_{n}+\alpha \boldsymbol{W}_{n o i s e}^{(k)}
+   $$
 
 ​        α is used to control the intensity of the noise, here it is set to 0.05 in this study. Random noise is added just to increase the number of generated signals, with no substantial information. 
 
