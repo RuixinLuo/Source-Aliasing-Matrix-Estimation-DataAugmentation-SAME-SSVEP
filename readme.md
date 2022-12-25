@@ -22,7 +22,7 @@ This demo shows an example of using SAME for SSVEP-BCIs. The state-of-the-art al
    
    ![](https://latex.codecogs.com/svg.image?\begin{aligned}&space;&space;&space;&&space;\widehat{\boldsymbol{\Phi}}={\operatorname&space;{&space;a&space;r&space;g&space;}&space;\operatorname&space;{&space;m&space;i&space;n&space;}}\left\|\overline{\boldsymbol{X}}_{n}-\boldsymbol{\Phi}&space;Y_{n}\right\|_F^2&space;&space;&space;\end{aligned})
    
-   ![](https://latex.codecogs.com/svg.image?\begin{aligned}&space;&space;&space;&&space;\widehat{\boldsymbol{S}}_{n,&space;m}=\widehat{\boldsymbol{\Phi}}&space;Y_{n,&space;m}&space;&space;&space;\end{aligned})
+   ![](https://latex.codecogs.com/svg.image?\begin{aligned}&space;&space;&space;&&space;\widehat{\boldsymbol{S}}_{n}=\widehat{\boldsymbol{\Phi}}&space;Y_{n}&space;&space;&space;\end{aligned})
    
 3. Random noise is added to obtain multiple artificial generated signals.
    
